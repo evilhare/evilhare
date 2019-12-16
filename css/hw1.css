@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+/* My Project starts from here */
+
+body{
+    background-color: #07ad6b33;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+
+    margin: 1.5vh;
+    padding: 1.5vh;
+    font-family: serif, sans-serif, arial, "Times New Roman";
+}
+header{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-image: url("../images/flywheel.jpg");
+    background-color: #000000;
+    line-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 8vh;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffffff; 
+    line-height: 10vh;
+}
+nav{
+    line-height: 15vh;
+}
+nav>a{
+    margin: 10vh;
+    padding: 15px 50px;
+    font-size: 4vh;
+    color: #000000;
+    background-color: #ffffff55;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.active{
+    background-color:  #ffffff;
+}
+main{
+    display: flex;
+    margin-top: 10px;
+}
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #827624aa;
+    height: 100vh;
+    border-radius: 5px;
+}
+img{
+    border: 2px solid black;
+    width: 25vh;
+    margin-top: 5vh;
+   
+}
+img:hover{
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transform: scale(2,2);
+    margin-left: 100px;
+
+}
+.right{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh;
+    font-size: 3vh;
+}
+h2{
+    font-size: 4vh;
+    font-family: sans-serif, arial, "Times New Roman";
+    font-weight: bold;
+    align-self: flex-start;
+}
+section>p{
+    margin: 10px;
+
+}
+section>ul{
+    margin: 10px 50px;
+    list-style-type: square;
+    align-self: flex-start;
+}
+table{
+    font-family: sans-serif, arial, "Times New Roman";
+    font-size: 2vh;
+    width: 120vh;
+    margin: 50px;
+    line-height: 4vh;
+}
+th{
+    border: 1px solid white;
+    border-bottom: 4px solid #a6ee3b;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    padding: 2px 15px;
+    text-align: center;
+    height: 40px;
+    font-weight: bold;
+    background-color: #b9c61f;
+    background-image: linear-gradient(to top, #827624, #b9c61f);
+    -webkit-background-image: linear-gradient(to top, #827624, #b9c61f);
+    -moz-background-image: linear-gradient(to top, #827624, #b9c61f);
+    -ms-background-image: linear-gradient(to top, #827624, #b9c61f);
+    -o-background-image: linear-gradient(to top, #827624, #b9c61f);
+    text-shadow: 0px 0px 10px #000000;
+}
+td{
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 2px 15px;
+    background-color: #b9c61f55;
+    opacity: 0.8;
+    text-align: center;
+    color: #138130;
+}
+tr:hover{
+    background-color: #b9c61f77;
+    text-shadow: 0px 0px 10px #000000;
+}
+td:first-child{
+    text-align: left;
+}
+th:first-child{
+    text-align: left;
+}
